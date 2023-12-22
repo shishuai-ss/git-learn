@@ -33,3 +33,16 @@ git log 支持的选项参数
 ### 回退到某个版本
 git reset --hard commit-id
 **其实git reset 有非常多的参数，但是简单起见我们只去记住git reset hard**
+### 操作日志
+其实除去版本日志，git也会记录操作日志。通过操作日志，我们就可以在回推到以前的某个版本后再次跳到后面的版本
+git reflog
+
+```text
+操作完成的版本号 第二列可能是操作的序号 具体动作
+a6ca4fc (HEAD -> main) HEAD@{0}: reset: moving to a6ca4fc
+3bcc508 HEAD@{1}: reset: moving to 3bcc508
+a6ca4fc (HEAD -> main) HEAD@{2}: commit: 添加了版本回退相关的命令介绍
+87aba30 HEAD@{3}: commit: 添加了git log 的一些参数选项
+06ad28f HEAD@{4}: commit: 添加了git log的相关笔记
+3bcc508 HEAD@{5}: commit (initial): README 文件当前进度 常见命令 git status
+```
