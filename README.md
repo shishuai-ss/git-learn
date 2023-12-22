@@ -30,10 +30,11 @@ git log 支持的选项参数
 * --abbrev-commit 使得提交的信息更加简短（主要就是提交id）
 * --graph 以图的形式显示
 **考虑到相关的参数实在是太长了，我们也可以给命令起别名alias "git-logl"="git log --pretty=oneline --all --graph --abbrev-commit"**
+使用git log命令只可以查看到HEAD指针及其之前的版本信息，如果版本发生过回退操作，则可能会出现，HEAD指针之后仍存在历史提交版本的情况，而这些提交版本信息通过git log命令是看不到的。
 ### 回退到某个版本
 git reset --hard commit-id
 **其实git reset 有非常多的参数，但是简单起见我们只去记住git reset hard**
-### 操作日志
+### 参考日志（操作日志）
 其实除去版本日志，git也会记录操作日志。通过操作日志，我们就可以在回推到以前的某个版本后再次跳到后面的版本
 git reflog
 
@@ -46,3 +47,6 @@ a6ca4fc (HEAD -> main) HEAD@{2}: commit: 添加了版本回退相关的命令介
 06ad28f HEAD@{4}: commit: 添加了git log的相关笔记
 3bcc508 HEAD@{5}: commit (initial): README 文件当前进度 常见命令 git status
 ```
+**这个命令记录的单纯是从clone 开始用户所有在本地库中的操作**
+## gitignore 文件
+.gitignore 文件在其中可以指定那些文件不需要git来管理
