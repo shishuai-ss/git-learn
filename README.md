@@ -21,5 +21,12 @@ git add
 git commit 
 将修改提交到仓储库，成为一个版本
 ### 查看状态
-git status### 查看仓库的历史提交记录
+git status
+### 查看仓库的历史提交记录
 git log
+git log 支持的选项参数
+* --all 显示所有的分支
+* --pretty=oneline 将提交信息显示为一行
+* --abbrev-commit 使得提交的信息更加简短（主要就是提交id）
+* --graph 以图的形式显示
+**考虑到相关的参数实在是太长了，我们也可以给命令起别名alias "git-logl"="git log --pretty=oneline --all --graph --abbrev-commit"**
