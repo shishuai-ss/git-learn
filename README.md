@@ -21,4 +21,5 @@ git add
 git commit 
 将修改提交到仓储库，成为一个版本
 ### 查看状态
-git status
+git status### 查看仓库的历史提交记录
+git log
