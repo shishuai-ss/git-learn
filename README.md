@@ -30,3 +30,6 @@ git log 支持的选项参数
 * --abbrev-commit 使得提交的信息更加简短（主要就是提交id）
 * --graph 以图的形式显示
 **考虑到相关的参数实在是太长了，我们也可以给命令起别名alias "git-logl"="git log --pretty=oneline --all --graph --abbrev-commit"**
+### 回退到某个版本
+git reset --hard commit-id
+**其实git reset 有非常多的参数，但是简单起见我们只去记住git reset hard**
