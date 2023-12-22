@@ -64,3 +64,5 @@ git branch 分支名称 # 创建新的分支
 git-logl 
 ### 创建并且切换分支
 git checkout -b 新分支的名称
+### 创建并且切换分支
+git checkout -b 新分支的名称
